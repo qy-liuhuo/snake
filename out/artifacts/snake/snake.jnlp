@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="snake.jnlp">
+    <information>
+        <title>MainApp</title>
+        <vendor>未知</vendor>
+        <description>MainApp</description>
+        <offline-allowed/>
+    </information>
+    <update check="background"/>
+    <resources>
+        <j2se version="11.0.15.1+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="fastjson-2.0.3.jar" size="91268" download="eager"/>
+        <jar href="fastjson2-2.0.3.jar" size="1234277" download="eager"/>
+        <jar href="fastjson2-extension-2.0.3.jar" size="45680" download="eager"/>
+        <jar href="mysql-connector-java-8.0.18.jar" size="2330539" download="eager"/>
+        <jar href="snake.jar" size="21543" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="600" height="400" main-class="com.mht.snake.MainApp" name="MainApp"/>
+</jnlp>
+

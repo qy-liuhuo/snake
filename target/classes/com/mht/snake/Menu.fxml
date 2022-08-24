@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mht.snake.MainApp">
+   <children>
+      <VBox alignment="CENTER" layoutY="26.0" prefHeight="37.0" prefWidth="800.0">
+         <children>
+            <Label text="贪吃蛇">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Slider fx:id="level" blockIncrement="1.0" layoutX="600.0" layoutY="241.0" majorTickUnit="1.0" max="5.0" min="1.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" />
+      <Label layoutX="500.0" layoutY="241.0" text="难度">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="500.0" layoutY="349.0" text="地图大小">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Slider fx:id="mapSize" blockIncrement="1.0" layoutX="600.0" layoutY="343.0" majorTickUnit="1.0" max="50.0" min="5.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="10.0" />
+      <Button fx:id="startGame" layoutX="518.0" layoutY="459.0" mnemonicParsing="false" onAction="#startGame" prefHeight="67.0" prefWidth="168.0" text="开始游戏" />
+      <Label layoutX="66.0" layoutY="215.0" prefHeight="218.0" prefWidth="340.0" text="方向键控制移动&#10;&#10;空格键暂停/继续&#10;&#10;回车键保存游戏" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="513.0" layoutY="595.0" mnemonicParsing="false" onAction="#restoreGame" prefHeight="67.0" prefWidth="175.0" text="恢复游戏" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <SCRIPT src="https://java.com/js/dtjava.js"></SCRIPT><script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'snake.jnlp'
+            },
+            {
+                javafx : '11.0.15.1+'
+            },
+            {}
+        );
+        return false;
+    }
+</script><script>
+    function javafxEmbedcom.mht.snake() {
+        dtjava.embed(
+            {
+                id : 'com.mht.snake',
+                url : 'snake.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '600',
+                height : '400'
+            },
+            {
+                javafx : '11.0.15.1+'
+            },
+            {}
+        );
+    }
+    
+            <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedcom.mht.snake);
+</script>
+    </head>
+    <body>
+        <h2>
+            Test page for <b>MainApp</b>
+        </h2>
+        <b>Webstart:</b><a href="snake.jnlp" onclick="return launchApplication('snake.jnlp');">click to launch this app as webstart</a>
+        <br>
+        <hr>
+        <br>
+        
+        <!-- Applet will be inserted here -->
+        <div id="javafx-app-placeholder"></div>
+    </body>
+</html>
